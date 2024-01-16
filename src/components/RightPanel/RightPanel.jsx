@@ -45,20 +45,20 @@ export const RightPanel = props => {
         radiusBottom={radiusBottom}
         height={height}
         addObject={props.addingObjects}
-        text='добавить элемент в поле'
+        text='add element'
       />
-      <ColorInput text='цвет' handleChange={handleColorChange} />
+      <ColorInput text='color' handleChange={handleColorChange} />
       <TopRadiusInput
-        text='высота'
+        text='height'
         handleTopRadiusChange={handleRadiusTopChange}
       />
       <RadiusBottomInput
-        text='радиус сверху'
+        text='top radius'
         handleBottomRadiusChange={handleRadiusBottomChange}
       />
       <HeightInput
         handleHeightChange={handleHeightChange}
-        text='радиус снизу'
+        text='bottom radius'
       />
       {props.objectsArray.map((card, i) => {
         return (

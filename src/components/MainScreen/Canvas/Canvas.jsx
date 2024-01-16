@@ -58,12 +58,6 @@ export const Canvas = () => {
     function animate() {
       const deltaTime = clock.getDelta(); // Получаем разницу времени между кадрами
 
-      objects.forEach(obj => {
-        obj.rotation.x += 0.05 * deltaTime; // Умножаем на deltaTime для постоянной скорости
-        obj.rotation.z += 0.05 * deltaTime; // Умножаем на deltaTime для постоянной скорости
-        obj.rotation.y += 0.05 * deltaTime;
-      });
-
       objects.forEach(object => {
         scene.add(object);
       });
